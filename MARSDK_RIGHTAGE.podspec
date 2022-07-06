@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MARSDK_RIGHTAGE'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '火星人打包工具'
 
 
@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/lizhigang6/MARSDK_RIGHTAGE.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'izhigang6@163.com' => 'lizhigang6@163.com' }
-  s.source           = { :git => 'https://github.com/lizhigang6/MARSDK_RIGHTAGE.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lizhigang6/MARSDK_RIGHTAGE.git', :tag =>  s.version.to_s }
   s.resource_bundles = {
      'Settings' => ['MARSDK_RIGHTAGE/Assets/*']
  }
- s.vendored_libraries =  'MARSDK_RIGHTAGE/SDK/libMARSDK_RIGHTAGE'
+  s.vendored_libraries =  'MARSDK_RIGHTAGE/SDK/*'
 
   s.ios.deployment_target = '10.0'
 
